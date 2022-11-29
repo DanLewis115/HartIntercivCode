@@ -24,7 +24,7 @@ public class InventoryController : ControllerBase
     {
         return Ok(Enumerable.Range(1, 10).Select(Index => new ItemDto
         {
-            Description = Items[Random.Shared.Next(Items.Length)],
+            Description = Items[Index - 1],
             Count = Random.Shared.Next(1, 10)
         })
         .ToArray());

@@ -10,7 +10,7 @@ import { CountdownConfig, CountdownEvent, CountdownComponent } from 'ngx-countdo
 })
 export class TimerComponent implements OnInit {
   @ViewChild(CountdownComponent) counter!: CountdownComponent;
-  title = 'Timer';
+  title = 'Time Remaining';
   config: CountdownConfig = { leftTime: 3000 };
 
   constructor(private http: HttpClient) { }
